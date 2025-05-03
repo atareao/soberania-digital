@@ -43,6 +43,8 @@
 
 == Herramientas clave: Linux y Docker
 
+#align(center)[Esta es la realidad: ni Windows, ni MacOS]
+#align(center)[*LINUX*]
 - *Linux*: Libre, estable, personalizable.
 - *Docker*: Contenedores para montar servicios rápidamente.
 - *Docker Compose*: Automatiza la orquestación de múltiples servicios.
@@ -60,6 +62,30 @@
 - *Matrix + Element*: Comunicación segura y privada.
 - *Mattermost / Rocket.Chat*: Chat colaborativo como Slack.
 
+== selfh.st
+
+- *selfh.st*: Un lugar donde encontrar _que montar_
+
+#figure(
+  image("./images/selfh-musica.png", width: 70%),
+  caption: "selfh.st",
+)
+
+== Una alternativa a Spotify 
+
+#figure(
+  image("./images/spotify.png", width: 70%),
+  caption: "spotify",
+)
+#pagebreak()
+
+== Symfonium
+
+#figure(
+  image("./images/symfonium.jpg", height: 80%)
+)
+
+
 == ¿Que puedes montar tú? - Productividad
 
 - *Nextcloud*: Almacenamiento y colaboración tipo Google Drive.
@@ -70,19 +96,75 @@
 - *HedgeDoc / Cryptpad*: Edición colaborativa y cifrada.
 - *Ghost / Hugo / Plume*: Tu propio blog, sin intermediarios.
 
-== ¿Como accedo a todos esos servicios?
+== selfh.st
 
-- ¿Como gestionamos todos los servicios en un servidor?
-- ¿Como accedemos a ellos?
-- *Traefik* y *Caddy*: Proxies inversos con HTTPS automático.
-- Organiza tu ecosistema con subdominios y rutas.
+- *selfh.st*: Un lugar donde encontrar _que montar_
 
-== ¿Como funciona Traefik?
+#figure(
+  image("./images/selfh-gitea.png", width: 70%),
+  caption: "selfh.st",
+)
 
-- Traefik como proxy inverso: Enrutamiento dinámico.
-- Integración con Docker para gestionar certificados SSL automáticamente.
-- ¡Nunca más tendrás que lidiar con certificados manualmente!
+== Una alternativa a GitHub 
 
+#figure(
+  image("./images/gitea.png", width: 70%),
+  caption: "GitHub",
+)
+
+== Gitnex
+
+#figure(
+  image("./images/gitnex.jpg", height: 80%)
+)
+
+= ¿Donde puedo montar todas esas maravillas?
+
+== Desempolva esa Raspberry Pi
+
+
+#figure(
+  image("./images/una-raspberry-pi-dentro-de-un-caj-n-con-polvo-y-te.jpg", width: 70%),
+  caption: "Raspberry Pi",
+)
+
+== ¿Cuanto me cuesta?
+
+Cálculo aproximado:
+- 24 horas día durante un mes
+- precio medio del kWh en España en 2025 (alrededor de *0,15 € por kWh* para tarifas estándar).
+
+$ #text[coste] = frac(#text[Potencia en W] dot #text[24 horas] dot #text[30 días], 1000) dot #text[Precio kWh]  $
+
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+    [Modelo],
+    [Consumo promedio (W)],
+    [Consumo mensual (kWh)],
+    [Coste mensual (€)]
+  ),
+  [3 B], [3.5], [2.52], [0.38],
+  [4], [5], [3.6], [0.54],
+  [5], [7], [5.04], [0.76]
+)
+
+Incluso en el caso más alto (una Raspberry Pi 5), tenerla encendida todo el mes te costaría menos de **1 euro al mes** en electricidad.
+== Desempolva ese miniPC
+
+#figure(
+  image("./images/una-minipc-dentro-de-un-caj-n-con-polvo-y-telara-a.jpg", width: 70%),
+  caption: "MiniPC",
+)
+
+== O en un servidor
+
+#figure(
+  image("./images/un-centro-de-proceso-de-datos.jpg", width: 70%),
+  caption: "Servidor",
+)
 = ¿Por donde empiezo?
 
 == En tres pasos
@@ -145,6 +227,19 @@ Y arrancamos,
 ```bash
 docker compose up -d
 ```
+
+== ¿Como accedo a todos esos servicios?
+
+- ¿Como gestionamos todos los servicios en un servidor?
+- ¿Como accedemos a ellos?
+- *Traefik* y *Caddy*: Proxies inversos con HTTPS automático.
+- Organiza tu ecosistema con subdominios y rutas.
+
+== ¿Como funciona Traefik?
+
+- Traefik como proxy inverso: Enrutamiento dinámico.
+- Integración con Docker para gestionar certificados SSL automáticamente.
+- ¡Nunca más tendrás que lidiar con certificados manualmente!
 
 == Mitos y excusas
 

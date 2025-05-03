@@ -75,7 +75,7 @@
     footer-descent: 0.8em,
   )
   set outline(
-    target: heading.where(level: 1),
+    target: heading.where(level: 2),
     title: none,
   )
   set bibliography(
