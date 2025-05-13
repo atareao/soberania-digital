@@ -19,12 +19,52 @@
 
 == Presentación
 
-- ¿Quien soy y que hago aquí?
-- ¿Y si te dijera que puedes tener tu propio Netflix, Spotify, Google Drive y Slack en casa?
-- Hoy veremos cómo *Linux* y *Docker* te permiten construir tu nube personal.
+#align(horizon)[
+  #align(center)[
+    #text(size:30pt)[
+  ¿Quien soy y que hago aquí?
+    ]
+  ]
+]
+
+#pagebreak()
+
+- Divulgo sobre Software Libre y Open Source
+#align(center)[#text(18pt)[Web: #text(blue)[atareao.es]]]
+#align(center)[#text(18pt)[Podcast: #text(blue)[atareao con Linux]]]
+#align(center)[#text(18pt)[Canal de Youtube: #text(blue)[atareao]]]
+#v(10pt)
+- Desarrollo de aplicaciones Open Source
+  - Python
+  - Rust
+  - TypeScript
+
+#pagebreak()
+
+#align(horizon)[
+  #align(center)[
+    Aviso a navegantes:
+  ]
+  #v(20pt)
+  #align(center)[Tiendo a emocionarme]
+  #align(center)[Cuando me emociono, hablo rápido]
+  #v(20pt)
+  #align(center)[Todo está en GitHub]
+  #align(center)[https://github.com/atareao/soberania-digital]
+]
+
+#pagebreak()
+
+#align(horizon)[
+  #align(center)[#text(size:25pt)[No quiero #text(rgb(180,180,180))[convencerte]]]
+  #align(center)[#text(size:25pt)[Solo mostrarte que]]
+  #align(center)[#text(size: 25pt, fill: red)[HAY OTRA OPCIÓN]]
+]
+
 
 == ¿Quien es quien?
 
+#align(horizon)[
 - ¿Sabes lo que es *Linux*?
 - ¿Lo utilizaste en alguna ocasión?
 - ¿Conoces *Docker*?
@@ -32,27 +72,59 @@
 - ¿Sabes qué es Nextcloud o Jellyfin?
 - ¿Tienes una Raspberry Pi o algún miniPC en casa?
 - ¿Sabes lo que es un VPS?
+]
+
+== ¿De que va todo esto?
+#block(spacing: 2em)[
+  #align(center)[
+    #text(size:20pt)[¿Y si te dijera que puedes tener tu propio #text(red)[Netflix], #text(green)[Spotify], #text(yellow)[Google Drive] y #text(purple)[Slack] en casa?]
+  ]
+  #align(center)[
+    #text(size:20pt)[Con *Linux* y *Docker* puedes construir propia #text(orange)[*tu NUBE personal*]]
+  ]
+]
 
 = Sobre la Soberanía Digital
 
 == ¿Que es eso de la  Soberanía Digital?
 
-- Control total sobre tus datos y servicios.
-- Evitar depender de plataformas externas.
-- *Tu nube, tus reglas*.
+#v(30pt)
+#align(center)[#text(size:20pt)[Control total sobre #text(red)[*tus datos*] y *tus servicios*]]
+#align(center)[#text(size:20pt)[Evita #text(red)[*depender*] de plataformas externas.]]
 
-== Herramientas clave: Linux y Docker
+#pagebreak()
 
-#align(center)[Esta es la realidad: ni Windows, ni MacOS]
-#align(center)[*LINUX*]
-- *Linux*: Libre, estable, personalizable.
-- *Docker*: Contenedores para montar servicios rápidamente.
-- *Docker Compose*: Automatiza la orquestación de múltiples servicios.
+#align(horizon)[
+- Control de los datos personales #text(rgb(80,80,80))[(*tus datos*)]
+- Uso de tecnologías libres y abiertas #text(rgb(80,80,80))[(*transparencia*)]
+- Autonomía tecnológica #text(rgb(80,80,80))[(*independencia de terceros*)]
+- Infraestructura bajo control propio #text(rgb(80,80,80))[(*acceso continuo*)]
+- Educación y concienciación digital #text(rgb(80,80,80))[(*tus decisiones*)]
+]
 
+#pagebreak()
+
+#v(30pt)
+#align(center)[#text(size:20pt)[¿Ya te #text(red)[*desapareció*] música de #text(green)[*Spotify*]?]]
+#v(30pt)
+#align(center)[#text(size:20pt)[¿Ya te #text(red)[*desapareció*] tu serie preferida de #text(red)[*Netflix*]?]]
+#v(30pt)
+
+#pagebreak()
+
+#align(horizon)[#align(center)[#text(size:35pt)[#text(red)[*Tu nube*] #h(50pt) #text(blue)[*tus reglas*]]]]
+
+#pagebreak()
+
+#align(horizon)[
+  #align(center)[
+    #text(size:40pt)[¿Ya te convencí?]]
+  ]
 = ¿Que puedo montar?
 
 == ¿Qué puedo montar? - Ocio
 
+#align(horizon)[
 - *Jellyfin*: Tu propio Netflix.
 - *Navidrome*: Música al estilo de Spotify.
 - *Photoprism*: Galería fotográfica inteligente.
@@ -61,29 +133,45 @@
 - *Mastodon / Pleroma*: Red social federada.
 - *Matrix + Element*: Comunicación segura y privada.
 - *Mattermost / Rocket.Chat*: Chat colaborativo como Slack.
-
-== selfh.st
-
-- *selfh.st*: Un lugar donde encontrar _que montar_
-
-#figure(
-  image("./images/selfh-musica.png", width: 70%),
-  caption: "selfh.st",
-)
+]
 
 == Una alternativa a Spotify 
 
 #figure(
-  image("./images/spotify.png", width: 70%),
-  caption: "spotify",
+  image("./images/navidrome.png", width: 90%),
+  caption: "Navidrome"
 )
-#pagebreak()
 
 == Symfonium
 
 #figure(
-  image("./images/symfonium.jpg", height: 80%)
+  image("./images/symfonium.jpg", height: 80%),
+  caption: "Symfonium"
 )
+
+== Plex
+
+#figure(
+  image("./images/plex.png", height: 80%),
+  caption: "Plex"
+)
+
+== Matrix + Element
+
+#figure(
+  image("./images/matrix.png", height: 80%)
+)
+
+#pagebreak()
+
+#align(horizon)[
+  #align(center)[
+    #text(size:30pt)[Ahora si, ¿verdad?]]
+  
+  #align(center)[
+    #text(size:30pt)[Ya te convencí!]]
+  ]
+
 
 
 == ¿Que puedes montar tú? - Productividad
@@ -96,20 +184,11 @@
 - *HedgeDoc / Cryptpad*: Edición colaborativa y cifrada.
 - *Ghost / Hugo / Plume*: Tu propio blog, sin intermediarios.
 
-== selfh.st
-
-- *selfh.st*: Un lugar donde encontrar _que montar_
-
-#figure(
-  image("./images/selfh-gitea.png", width: 70%),
-  caption: "selfh.st",
-)
-
 == Una alternativa a GitHub 
 
 #figure(
   image("./images/gitea.png", width: 70%),
-  caption: "GitHub",
+  caption: "Gitea"
 )
 
 == Gitnex
@@ -118,7 +197,56 @@
   image("./images/gitnex.jpg", height: 80%)
 )
 
+== Un blog
+
+#figure(
+  image("./images/blog.png", width: 70%),
+  caption: "WordPress"
+)
+
+== selfh.st
+
+- *selfh.st*: Un lugar donde encontrar _que montar_
+
+#figure(
+  image("./images/selfh-gitea.png", width: 90%),
+  caption: "selfh.st",
+)
+
+== Awesome Selfhosted
+
+- awesome-selfhosted.net
+#figure(
+  image("./images/awesome.png", width: 90%),
+  caption: "awesome-selfhosted.net",
+)
+
+== Mi página de inicio
+
+#figure(
+  image("./images/home.png", width: 90%),
+  caption: "homepage",
+)
+
 = ¿Donde puedo montar todas esas maravillas?
+
+== Herramientas clave: Linux y Docker
+
+#align(horizon)[
+#align(center)[Esta es la realidad: *NI* #text(fill: red)[Windows] *NI* #text(fill: red)[MacOS]]
+#align(center)[#text(20pt, fill: blue)[*LINUX*]]
+- *Linux*: Libre, estable, personalizable.
+- *Docker*: Contenedores para montar servicios rápidamente.
+- *Docker Compose*: Automatiza la orquestación de múltiples servicios.
+]
+
+== Herramientas clave: Linux y Docker
+
+#align(horizon)[
+#align(center)[#text(30pt)[¿Pero donde _Lorenzo_?]]
+#align(center)[#text(30pt)[¿Donde?]]
+]
+
 
 == Desempolva esa Raspberry Pi
 
@@ -151,7 +279,7 @@ $ #text[coste] = frac(#text[Potencia en W] dot #text[24 horas] dot #text[30 día
   [5], [7], [5.04], [0.76]
 )
 
-Incluso en el caso más alto (una Raspberry Pi 5), tenerla encendida todo el mes te costaría menos de **1 euro al mes** en electricidad.
+Incluso en el caso más alto (una Raspberry Pi 5), tenerla encendida todo el mes te costaría menos de *1 euro al mes* en electricidad.
 == Desempolva ese miniPC
 
 #figure(
@@ -165,17 +293,26 @@ Incluso en el caso más alto (una Raspberry Pi 5), tenerla encendida todo el mes
   image("./images/un-centro-de-proceso-de-datos.jpg", width: 70%),
   caption: "Servidor",
 )
+
+#align(center)[Un VPS puede costar entre *5 y 10 euros al mes*.]
+#align(center)[4 CPU y 8 GB RAM]
+
 = ¿Por donde empiezo?
 
 == En tres pasos
 
+#align(horizon)[
 - Empieza con un portátil viejo o una Raspberry Pi.
+#v(30pt)
 - Instala *Linux*, luego *Docker* y *Docker Compose*.
-- Ejemplo sencillo de un archivo `docker-compose.yml` para Jellyfin.
+]
 
 == Instalación de Linux
 
+#align(horizon)[
 - Descarga una distribución ligera como *Ubuntu Server*
+]
+#align(center)["Hay cientos de tutoriales en YouTube"]
 
 == Instalación de Docker (1/2)
 
@@ -230,26 +367,38 @@ docker compose up -d
 
 == ¿Como accedo a todos esos servicios?
 
+#align(horizon)[
 - ¿Como gestionamos todos los servicios en un servidor?
 - ¿Como accedemos a ellos?
 - *Traefik* y *Caddy*: Proxies inversos con HTTPS automático.
 - Organiza tu ecosistema con subdominios y rutas.
+]
 
 == ¿Como funciona Traefik?
 
+#align(horizon)[
 - Traefik como proxy inverso: Enrutamiento dinámico.
 - Integración con Docker para gestionar certificados SSL automáticamente.
 - ¡Nunca más tendrás que lidiar con certificados manualmente!
+]
 
 == Mitos y excusas
 
+#align(horizon)[
 - *Es muy difícil* → Falso. Es más sencillo de lo que parece.
 - *Solo para frikis* → No. Puedes hacerlo sin ser un experto.
 - *¿Y si se rompe?* → Reinicia el contenedor y listo.
+]
 
-== Preguntas
+= Preguntas
 
-=== Recursos y en enlaces
+
+== Recursos y en enlaces
+
+- atareao.es
+- github.com/atareao/soberania-digital
+- Typst
+
 
 
 
